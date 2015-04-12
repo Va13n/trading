@@ -10,4 +10,5 @@ from scrapy.item import Item, Field
 class Stock(Item):
     name = Field()
     weight = Field()
+    start_url = Field()
     
