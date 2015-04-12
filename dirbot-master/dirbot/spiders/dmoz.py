@@ -53,7 +53,7 @@ class DmozSpider(Spider):
         if content != oldcontent:
             mailer = MailSender(mailfrom="kasajqbot@gmail.com",smtphost="smtp.gmail.com",smtpport=587,
                         smtpuser="kasajqbot@gmail.com",smtppass="12346789jq")
-            mailer.send(to=["kasajq@gmail.com"],
+            mailer.send(to=["kasajq@gmail.com",,"yingyj08@gmail.com ","ylz123@126.com"],
                         subject="[AutoMail]Position Changed",
                         body="Portfolio Link on Xueqiu: " + item['start_url']+"\n"
                         +"New positon: "+content.encode('UTF-8')+"\n"
